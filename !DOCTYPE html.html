@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Omnia</title>
+    <style>
+        body {
+            background-color: #f8f0e3;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #333;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #e27d60;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .reveal-button {
+            background-color: #85c1e9;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .reveal-button:hover {
+            background-color: #3498db;
+        }
+        .love-message {
+            display: none;
+            font-size: 24px;
+            color: #e27d60;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>A Special Message for Omnia</h1>
+        <p>Hey Omnia,</p>
+        <p>There’s something I've been wanting to tell you for a while now. It's something that means a lot to me, and I hope it will mean a lot to you too.</p>
+        <p>When you're ready, click the button below to reveal my secret.</p>
+        <button class="reveal-button" onclick="revealLove()">Click to Reveal</button>
+        <div class="love-message" id="loveMessage">
+            <p>I Love You, Omnia!</p>
+        </div>
+    </div>
+
+    <script>
+        function revealLove() {
+            document.getElementById('loveMessage').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
